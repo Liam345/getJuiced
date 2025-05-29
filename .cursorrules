@@ -1,0 +1,87 @@
+{
+  "projectStructure": {
+    "src": {
+      "assets": {
+        "images": "Store all image assets here",
+        "svgs": "SVG components and icons"
+      },
+      "components": {
+        "form": {
+          "description": "Reusable shared form components",
+          "structure": {
+            "location": "All form components go directly in this folder",
+            "naming": "PascalCase (e.g., Input.tsx, Select.tsx)",
+            "tests": "All form component tests go in _tests_ folder"
+          }
+        },
+        "ui": {
+          "description": "Basic UI components like buttons, cards, etc.",
+          "structure": {
+            "location": "All UI components go directly in this folder",
+            "naming": "PascalCase (e.g., Button.tsx, Card.tsx)",
+            "tests": "All UI component tests go in _tests_ folder"
+          }
+        }
+      },
+      "context": "React context providers and consumers",
+      "data": "Static data, mock data, and constants",
+      "hooks": "Custom React hooks",
+      "pages": {
+        "structure": "Each page has its own directory with the following structure:",
+        "example": {
+          "Home": {
+            "index.ts": "Main page component and exports",
+            "components": {
+              "description": "Page-specific components",
+              "structure": {
+                "location": "All page-specific components go directly in this folder",
+                "naming": "PascalCase (e.g., WelcomeBanner.tsx, FeaturedContent.tsx)",
+                "tests": "All page component tests go in _tests_ folder"
+              }
+            },
+            "_tests_": "Tests for the page and its components"
+          }
+        },
+        "guidelines": [
+          "Use PascalCase for page directories (e.g., Home, Login, Dashboard)",
+          "Page-specific components should not be shared across pages",
+          "Each page should have its own _tests_ directory",
+          "Use index.ts as the main entry point for each page",
+          "Page components should be self-contained in a single file without sub-folders"
+        ]
+      },
+      "utils": "Utility functions and helpers. Generally, pure functions that don't rely on state or side effects."
+    }
+  },
+  "codingStandards": {
+    "components": {
+      "naming": "Use PascalCase for component files and functions",
+      "structure": "Components should be self-contained in a single file",
+      "props": "Use TypeScript interfaces for props"
+    },
+    "hooks": {
+      "naming": "Prefix with 'use' (e.g., useAuth, useTheme)",
+      "location": "Place in hooks directory or co-locate with component if specific"
+    },
+    "tests": {
+      "location": "Co-locate with the files they test",
+      "naming": "*.test.ts or *.test.tsx"
+    },
+    "imports": {
+      "order": [
+        "React and third-party libraries",
+        "Internal components",
+        "Hooks and utilities",
+        "Types and interfaces",
+        "Styles"
+      ]
+    }
+  },
+  "fileNaming": {
+    "components": "PascalCase (e.g., Button.tsx)",
+    "hooks": "camelCase (e.g., useAuth.ts)",
+    "utils": "camelCase (e.g., formatDate.ts)",
+    "tests": "*.test.ts or *.test.tsx",
+    "pages": "PascalCase (e.g., Home, Login)"
+  }
+} 
