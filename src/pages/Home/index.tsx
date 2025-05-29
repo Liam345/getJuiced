@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Button } from ;
 import { WelcomeBanner } from './components/WelcomeBanner';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 import { Navigation } from '@/components/ui/Navigation';
 
 export const Home: React.FC = () => {
