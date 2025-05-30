@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { Home } from '@/pages/Home';
-import ContentGenerator from './pages/Content';
+import ContentGenerator from '@/pages/Content';
 
 export const router = createBrowserRouter([
   {
