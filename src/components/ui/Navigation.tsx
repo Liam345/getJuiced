@@ -8,7 +8,7 @@ export const Navigation: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="text-xl font-bold text-gray-800">
-              My App
+              Get Juiced
             </Link>
           </div>
           <div className="flex items-center space-x-4">

@@ -58,7 +58,7 @@ const ContentGenerator = () => {
                 />
               </div>
               <div className="flex gap-2">
-                <Button type="submit" className="flex-1" disabled={!reference.trim() && !prompt.trim()}>
+                <Button type="submit" variant="outline" className="flex-1" disabled={!reference.trim() && !prompt.trim()}>
                   <span className="mr-2">⚡️</span> Generate
                 </Button>
                 <Button type="button" variant="secondary" onClick={handleClear}>
